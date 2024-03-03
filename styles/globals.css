@@ -2,32 +2,84 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: #e56f82 white;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.main-body {
+  background: url("/bg.jpg") fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 100%) {
+  .container {
+    max-width: 100%;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+@layer base {
+  .socialIcon {
+    @apply relative flex h-[2.5rem] w-[2.5rem] items-center justify-center rounded-md bg-[#f3f6f6] text-[#E56F82] transition-all duration-500 after:absolute after:h-full after:w-full after:rounded-md after:bg-gradient-to-r after:from-[#FA5252] after:to-[#DD2476] after:opacity-0 after:transition-all after:duration-500 hover:text-white hover:after:opacity-100;
+  }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .navLinks {
+    @apply relative flex h-20 flex-col items-center justify-center rounded-md bg-[#f3f6f6] px-4 text-sm text-gray-700 transition-all duration-500 after:absolute after:h-full after:w-full after:rounded-md after:bg-gradient-to-r after:from-[#FA5252] after:to-[#DD2476] after:opacity-0 after:transition-all after:duration-500 hover:text-white hover:after:opacity-100;
   }
 }
+
+/* @media (max-width: 992px) {
+  .nav {
+    clip-path: inset(0% 0 100% 0%);
+    transition: clip-path ease-in-out 300ms;
+    z-index: 1000;
+  }
+}
+
+.nav_open {
+  clip-path: inset(0);
+  transition: clip-path ease-in-out 300ms;
+}
+
+.header_one .menu-toggle {
+  cursor: pointer;
+  width: 2em;
+  height: 2em;
+}
+
+.header_one .hamburger,
+.header_one .hamburger::before,
+.header_one .hamburger::after {
+  content: "";
+  display: block;
+  background: white;
+  height: 4px;
+  width: 2em;
+  border-radius: 3px;
+  transition: all ease-in-out 300ms;
+}
+
+.hamburger::before {
+  transform: translateY(-8px);
+}
+
+.hamburger::after {
+  transform: translateY(4px);
+}
+
+.open .hamburger {
+  transform: rotate(45deg);
+}
+
+.open .hamburger::before {
+  opacity: 0;
+}
+
+.open .hamburger::after {
+  transform: translateY(-4px) rotate(-90deg);
+} */
