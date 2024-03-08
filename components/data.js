@@ -4,7 +4,7 @@ export const navLinks = [
       <svg
         stroke="currentColor"
         fill="currentColor"
-        stroke-width="0"
+        strokeWidth="0"
         viewBox="0 0 1024 1024"
         height="1em"
         width="1em"
@@ -21,7 +21,7 @@ export const navLinks = [
       <svg
         stroke="currentColor"
         fill="none"
-        stroke-width="0"
+        strokeWidth="0"
         viewBox="0 0 24 24"
         height="1em"
         width="1em"
@@ -44,8 +44,8 @@ export const navLinks = [
           fill="currentColor"
         ></path>
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M2 4C2 2.34315 3.34315 1 5 1H19C20.6569 1 22 2.34315 22 4V20C22 21.6569 20.6569 23 19 23H5C3.34315 23 2 21.6569 2 20V4ZM5 3H19C19.5523 3 20 3.44771 20 4V20C20 20.5523 19.5523 21 19 21H5C4.44772 21 4 20.5523 4 20V4C4 3.44772 4.44771 3 5 3Z"
           fill="currentColor"
         ></path>
@@ -59,10 +59,10 @@ export const navLinks = [
       <svg
         stroke="currentColor"
         fill="none"
-        stroke-width="2"
+        strokeWidth="2"
         viewBox="0 0 24 24"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
         height="1em"
         width="1em"
         xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +83,7 @@ export const navLinks = [
       <svg
         stroke="currentColor"
         fill="currentColor"
-        stroke-width="0"
+        strokeWidth="0"
         viewBox="0 0 24 24"
         height="1em"
         width="1em"
