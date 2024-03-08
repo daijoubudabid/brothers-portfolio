@@ -28,7 +28,7 @@ const socialDetails = [
       <svg
         stroke="currentColor"
         fill="#FD7590"
-        stroke-width="0"
+        strokeWidth="0"
         viewBox="0 0 320 512"
         height="1em"
         width="1em"
@@ -45,7 +45,7 @@ const socialDetails = [
       <svg
         stroke="currentColor"
         fill="#6AB5B9"
-        stroke-width="0"
+        strokeWidth="0"
         viewBox="0 0 384 512"
         height="1em"
         width="1em"
@@ -62,7 +62,7 @@ const socialDetails = [
       <svg
         stroke="currentColor"
         fill="currentColor"
-        stroke-width="0"
+        strokeWidth="0"
         viewBox="0 0 512 512"
         height="1em"
         width="1em"
@@ -79,7 +79,7 @@ const socialDetails = [
       <svg
         stroke="currentColor"
         fill="#C17CEB"
-        stroke-width="0"
+        strokeWidth="0"
         viewBox="0 0 448 512"
         height="1em"
         width="1em"
@@ -120,7 +120,7 @@ export const Hero = () => {
         <div className="mt-7 rounded-2xl bg-[#F3F6F6] p-7">
           {socialDetails.map((item, index) => (
             <div className="flex border-b border-[#E3E3E3] py-2.5" key={index}>
-              <span className="socialIcon cursor-pointer bg-white shadow-md z-10">
+              <span className="socialIcon z-10 cursor-pointer bg-white shadow-md">
                 {item.icon}
               </span>
               <div className="ml-2.5 text-left">
